@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
-const images = ['/gym-smith.webp', '/gym-equipment.webp', '/gym-main.webp']
+const images = ['/gym-training.webp', '/gym-smith.webp', '/gym-equipment.webp', '/gym-main.webp']
 
 export default function HeroSection() {
   const [current, setCurrent] = useState(0)
@@ -20,7 +20,7 @@ export default function HeroSection() {
       {images.map((src, i) => (
         <div
           key={src}
-          className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+          className="absolute inset-0 bg-contain bg-center bg-no-repeat transition-opacity duration-1000"
           style={{
             backgroundImage: `url(${src})`,
             opacity: i === current ? 1 : 0,

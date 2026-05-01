@@ -1,39 +1,13 @@
 import Link from 'next/link'
 import { getSortedPostsData } from '@/lib/posts'
+import HeroSection from '@/components/HeroSection'
 
 export default function Home() {
   const posts = getSortedPostsData().slice(0, 3)
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-navy text-white py-20 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-yellow-400 text-sm font-bold tracking-widest mb-4">福井県鯖江市の完全貸切パーソナルジム</p>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            「ダサくても<br className="md:hidden" />いいじゃない！」
-          </h1>
-          <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-            動きたいけど、踏み出せないあなたへ。<br />
-            誰にも見られない、自分だけの空間で<br />
-            あなただけのペースで始めよう。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact/"
-              className="bg-yellow-400 text-navy px-8 py-4 rounded font-bold text-lg hover:bg-yellow-300 transition"
-            >
-              初回体験 1,000円 →
-            </Link>
-            <Link
-              href="/price/"
-              className="border border-white text-white px-8 py-4 rounded font-bold text-lg hover:bg-white hover:text-navy transition"
-            >
-              料金を見る
-            </Link>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* 3 Points */}
       <section id="about" className="py-16 px-4 bg-[#f9f7f4]">
@@ -64,36 +38,6 @@ export default function Home() {
                 <p className="text-gray-600 text-sm leading-relaxed">{item.body}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">GALLERY</p>
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-10">ジム内装・設備</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <img
-              src="/gym-smith.webp"
-              alt="スミスマシン・ケーブルマシン"
-              className="rounded-xl w-full h-64 object-cover shadow-sm"
-            />
-            <img
-              src="/gym-equipment.webp"
-              alt="バランスボール・ストレッチポール・器具"
-              className="rounded-xl w-full h-64 object-cover shadow-sm"
-            />
-            <img
-              src="/gym-main.webp"
-              alt="ジム内装"
-              className="rounded-xl w-full h-64 object-cover shadow-sm"
-            />
-            <img
-              src="/gym-trainer.webp"
-              alt="トレーニング"
-              className="rounded-xl w-full h-64 object-cover shadow-sm"
-            />
           </div>
         </div>
       </section>

@@ -34,8 +34,8 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative max-w-3xl mx-auto text-center w-full">
         <p className="text-yellow-400 text-sm font-bold tracking-widest mb-4">福井県鯖江市の完全貸切パーソナルジム</p>
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-          「ダサくても<br className="md:hidden" />いいじゃない！」
+        <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-6 whitespace-nowrap">
+          「ダサくてもいいじゃない！」
         </h1>
         <p className="text-gray-300 text-xl mb-8 leading-relaxed">
           動きたいけど、踏み出せないあなたへ。<br />

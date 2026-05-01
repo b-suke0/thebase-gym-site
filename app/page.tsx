@@ -118,14 +118,20 @@ export default function Home() {
             <div>
               <address className="not-italic text-gray-700 leading-relaxed">
                 <p className="font-bold text-lg text-navy mb-4">THE BASE GYM</p>
-                <p>〒916-0005<br />福井県鯖江市杉本町17-8-8</p>
-                <p className="mt-3">
-                  📞 <a href="tel:090-9234-6711" className="text-navy font-bold hover:underline">090-9234-6711</a>
-                </p>
-                <p className="mt-1">
-                  ✉ <a href="mailto:the-base-gym@ymail.ne.jp" className="text-navy hover:underline">the-base-gym@ymail.ne.jp</a>
-                </p>
+                <p>福井県鯖江市杉本町</p>
                 <p className="mt-3 text-sm text-gray-500">完全予約制 / 駐車場2台完備</p>
+                <div className="mt-4 bg-green-50 border border-green-200 rounded-lg px-4 py-3">
+                  <p className="text-sm font-bold text-green-800 mb-1">📲 LINE公式アカウント（無料）</p>
+                  <p className="text-xs text-green-700 mb-2">ジムに来られない方も、トレーニング情報・食事アドバイスを無料で受け取れます</p>
+                  <a
+                    href="https://lin.ee/xVgylZJ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-green-500 text-white px-4 py-2 rounded font-bold text-sm hover:bg-green-600 transition"
+                  >
+                    LINEで友だち追加 →
+                  </a>
+                </div>
               </address>
               <div className="mt-6 flex gap-3">
                 <Link
@@ -135,7 +141,7 @@ export default function Home() {
                   予約・お問い合わせ
                 </Link>
                 <a
-                  href="https://www.google.com/maps?q=福井県鯖江市杉本町17-8-8"
+                  href="https://www.google.com/maps?q=福井県鯖江市杉本町"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-navy text-navy px-6 py-3 rounded font-bold hover:bg-gray-50 transition text-sm"

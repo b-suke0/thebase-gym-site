@@ -40,21 +40,22 @@ export default function ContactPage() {
       <section className="py-16 px-4 bg-[#f9f7f4]">
         <div className="max-w-2xl mx-auto">
           {/* Direct contact */}
-          <div className="bg-white rounded-xl p-6 shadow-sm mb-10">
-            <h2 className="text-lg font-bold text-navy mb-4">直接ご連絡も歓迎です</h2>
-            <div className="space-y-3 text-sm text-gray-700">
-              <p>
-                📞{' '}
-                <a href="tel:090-9234-6711" className="font-bold text-navy hover:underline">
-                  090-9234-6711
-                </a>
-              </p>
-              <p>
-                ✉{' '}
-                <a href="mailto:the-base-gym@ymail.ne.jp" className="text-navy hover:underline">
-                  the-base-gym@ymail.ne.jp
-                </a>
-              </p>
+          <div className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm mb-10">
+            <h2 className="text-lg font-bold text-green-800 mb-2">LINEで気軽にご連絡ください</h2>
+            <p className="text-sm text-green-700 mb-4">
+              ジムに来られない方も大歓迎！<br />
+              トレーニング情報・食事アドバイスを<span className="font-bold">無料</span>で受け取れます。<br />
+              予約・ご質問もLINEからどうぞ。
+            </p>
+            <a
+              href="https://lin.ee/xVgylZJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-green-500 text-white px-6 py-3 rounded-lg font-bold text-base hover:bg-green-600 transition"
+            >
+              📲 LINEで友だち追加（無料）→
+            </a>
+            <div className="mt-5 pt-5 border-t border-green-200 space-y-2 text-sm text-gray-600">
               <p>
                 📷{' '}
                 <a

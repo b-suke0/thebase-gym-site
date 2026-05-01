@@ -15,7 +15,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative text-white py-20 px-4 overflow-hidden min-h-[480px] flex items-center">
+    <section className="relative text-white py-20 px-4 overflow-hidden min-h-[640px] flex items-center">
       {/* Background images */}
       {images.map((src, i) => (
         <div
@@ -23,6 +23,7 @@ export default function HeroSection() {
           className="absolute inset-0 bg-contain bg-center bg-no-repeat transition-opacity duration-1000"
           style={{
             backgroundImage: `url(${src})`,
+            backgroundColor: '#050c38',
             opacity: i === current ? 1 : 0,
           }}
         />

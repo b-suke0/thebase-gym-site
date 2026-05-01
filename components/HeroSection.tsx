@@ -15,7 +15,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative text-white py-24 px-4 overflow-hidden min-h-screen flex items-center">
+    <section className="relative text-white py-20 px-4 overflow-hidden min-h-[640px] flex items-center">
       {/* Background images */}
       {images.map((src, i) => (
         <div
@@ -33,11 +33,11 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative max-w-3xl mx-auto text-center w-full">
-        <p className="text-yellow-400 text-base font-bold tracking-widest mb-6">福井県鯖江市の完全貸切パーソナルジム</p>
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-8">
+        <p className="text-yellow-400 text-sm font-bold tracking-widest mb-4">福井県鯖江市の完全貸切パーソナルジム</p>
+        <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
           「ダサくても<br className="md:hidden" />いいじゃない！」
         </h1>
-        <p className="text-gray-200 text-xl mb-10 leading-relaxed">
+        <p className="text-gray-300 text-xl mb-8 leading-relaxed">
           動きたいけど、踏み出せないあなたへ。<br />
           誰にも見られない、自分だけの空間で<br />
           あなただけのペースで始めよう。
@@ -45,13 +45,13 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/contact/"
-            className="bg-yellow-400 text-navy px-10 py-5 rounded font-bold text-xl hover:bg-yellow-300 transition"
+            className="bg-yellow-400 text-navy px-10 py-4 rounded font-bold text-xl hover:bg-yellow-300 transition"
           >
             初回体験 1,000円 →
           </Link>
           <Link
             href="/price/"
-            className="border border-white text-white px-10 py-5 rounded font-bold text-xl hover:bg-white hover:text-navy transition"
+            className="border border-white text-white px-10 py-4 rounded font-bold text-xl hover:bg-white hover:text-navy transition"
           >
             料金を見る
           </Link>

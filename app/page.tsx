@@ -68,6 +68,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Gallery */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">GALLERY</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-10">ジム内装・設備</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img
+              src="/gym-smith.webp"
+              alt="スミスマシン・ケーブルマシン"
+              className="rounded-xl w-full h-64 object-cover shadow-sm"
+            />
+            <img
+              src="/gym-equipment.webp"
+              alt="バランスボール・ストレッチポール・器具"
+              className="rounded-xl w-full h-64 object-cover shadow-sm"
+            />
+            <img
+              src="/gym-main.webp"
+              alt="ジム内装"
+              className="rounded-xl w-full h-64 object-cover shadow-sm"
+            />
+            <img
+              src="/gym-trainer.webp"
+              alt="トレーニング"
+              className="rounded-xl w-full h-64 object-cover shadow-sm"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Course Menu */}
       <section className="bg-navy text-white py-16 px-4">
         <div className="max-w-5xl mx-auto">

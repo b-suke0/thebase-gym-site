@@ -7,7 +7,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Info */}
           <div>
-            <h3 className="text-lg font-bold mb-4">THE BASE GYM</h3>
+            <div className="flex items-center gap-2 mb-4">
+              <img src="/logo.webp" alt="THE BASE GYM" className="h-8 w-auto" />
+              <h3 className="text-lg font-bold">THE BASE GYM</h3>
+            </div>
             <p className="text-sm text-gray-300 leading-relaxed">
               レンタルトレーニングルーム／パーソナルトレーニング<br />
               完全予約制・完全貸切<br />

@@ -8,8 +8,9 @@ export default function Header() {
   return (
     <header className="bg-navy text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-wider hover:opacity-80 transition">
-          THE BASE GYM
+        <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition">
+          <img src="/logo.webp" alt="THE BASE GYM" className="h-8 w-auto" />
+          <span className="text-xl font-bold tracking-wider">THE BASE GYM</span>
         </Link>
 
         {/* PC Nav */}

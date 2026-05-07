@@ -53,7 +53,7 @@ export default function Home() {
                 <img
                   src="/trainer.png"
                   alt="トレーナー"
-                  className="w-52 h-52 md:w-64 md:h-64 object-cover object-top rounded-2xl shadow-md"
+                  className="w-52 h-64 md:w-64 md:h-80 object-cover object-[center_15%] rounded-2xl shadow-md"
                 />
               </div>
               <div className="flex-1">

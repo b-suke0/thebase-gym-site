@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { getSortedPostsData } from '@/lib/posts'
 
 export const metadata: Metadata = {
-  title: 'ブログ',
-  description: 'THE BASE GYMのブログ。パーソナルトレーニング・ダイエット・健康に関する情報を発信しています。',
+  title: 'コラム',
+  description: 'THE BASE GYMのコラム。パーソナルトレーニング・ダイエット・健康に関する情報を発信しています。',
 }
 
 const CATEGORIES = ['すべて', 'トレーニング', '栄養・食事', 'ダイエット', 'ジムについて', 'お知らせ']
@@ -17,8 +17,8 @@ export default function BlogPage() {
       {/* Hero */}
       <section className="bg-navy text-white py-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-yellow-400 text-sm font-bold tracking-widest mb-3">BLOG</p>
-          <h1 className="text-3xl md:text-4xl font-bold">ブログ</h1>
+          <p className="text-yellow-400 text-sm font-bold tracking-widest mb-3">COLUMN</p>
+          <h1 className="text-3xl md:text-4xl font-bold">コラム</h1>
           <p className="mt-4 text-gray-300">トレーニング・栄養・健康に関する情報を発信中</p>
         </div>
       </section>

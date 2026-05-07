@@ -202,8 +202,8 @@ export default function Home() {
       {/* Blog preview */}
       <section className="py-16 px-4 bg-[#f9f7f4]">
         <div className="max-w-5xl mx-auto">
-          <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">BLOG</p>
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-10">新着ブログ</h2>
+          <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">COLUMN</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-10">新着コラム</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {posts.map((post) => (
               <Link
@@ -224,7 +224,7 @@ export default function Home() {
               href="/blog/"
               className="border border-navy text-navy px-8 py-3 rounded font-bold hover:bg-navy hover:text-white transition"
             >
-              ブログ一覧を見る →
+              コラム一覧を見る →
             </Link>
           </div>
         </div>

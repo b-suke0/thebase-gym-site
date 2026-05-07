@@ -21,8 +21,8 @@ export default function PricePage() {
       {/* Plans */}
       <section className="py-16 px-4 bg-[#f9f7f4]">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-red-500 text-white text-center font-bold py-3 px-4 rounded-xl mb-8 text-sm md:text-base">
-            🎉 今なら入会金無料！（期間限定）
+          <div className="bg-red-500 text-white text-center font-bold py-4 px-4 rounded-xl mb-8 text-base md:text-lg tracking-wide shadow-md">
+            🎉 入会金・年会費・解約金すべて無料！
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Light */}
@@ -88,7 +88,6 @@ export default function PricePage() {
               <p className="font-bold text-navy text-sm">PayPay</p>
             </div>
           </div>
-          <p className="mt-6 text-sm text-gray-500">入会金・年会費・解約金は一切かかりません。</p>
         </div>
       </section>
 

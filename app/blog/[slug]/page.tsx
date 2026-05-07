@@ -47,7 +47,7 @@ export default async function BlogPostPage({ params }: Props) {
       <section className="py-12 px-4 bg-[#f9f7f4]">
         <div className="max-w-3xl mx-auto">
           <article
-            className="prose bg-white rounded-xl p-8 shadow-sm"
+            className="prose prose-table:w-full prose-td:border prose-td:border-gray-200 prose-td:px-3 prose-td:py-2 prose-th:border prose-th:border-gray-200 prose-th:px-3 prose-th:py-2 prose-th:bg-navy prose-th:text-white max-w-none bg-white rounded-xl p-8 shadow-sm"
             dangerouslySetInnerHTML={{ __html: post.contentHtml ?? '' }}
           />
 

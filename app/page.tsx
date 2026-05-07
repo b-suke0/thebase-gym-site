@@ -48,29 +48,40 @@ export default function Home() {
           <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">TRAINER</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-10">トレーナー紹介</h2>
           <div className="bg-[#f9f7f4] rounded-2xl p-8 md:p-10">
-            <h3 className="text-xl md:text-2xl font-bold text-navy mb-6 leading-snug">
-              15年の継続が作る、<br className="md:hidden" />理にかなったボディメイク
-            </h3>
-            <div className="space-y-4 text-gray-700 leading-relaxed">
-              <p>
-                小学校から大学までの16年間、野球一筋で白球を追い続けてきました。その現役時代に培った身体作りの基礎をベースに、16歳から本格的にウエイトトレーニングを開始。以来15年以上、欠かすことなくトレーニングを継続しています。
-              </p>
-              <p>
-                現在は「仕事や家庭と両立しながら、いかに効率よく理想の身体を作るか」をテーマに、自宅にスミスマシンや可変式ダンベルを備えたこだわりのホームジムを構築し、日々研究を重ねています。
-              </p>
-              <p>
-                長年のスポーツ経験と、15年の筋トレキャリアで得た「身体を変えるための本質」を、自身のYouTubeチャンネル等でも発信しています。
-              </p>
-            </div>
-            <div className="mt-6">
-              <a
-                href="https://www.youtube.com/@thebase-gym/videos"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-red-700 transition"
-              >
-                ▶ YouTubeチャンネルを見る
-              </a>
+            <div className="flex flex-col md:flex-row gap-8 items-center">
+              <div className="flex-shrink-0">
+                <img
+                  src="/trainer.png"
+                  alt="トレーナー"
+                  className="w-52 h-52 md:w-64 md:h-64 object-cover object-top rounded-2xl shadow-md"
+                />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl md:text-2xl font-bold text-navy mb-6 leading-snug">
+                  15年の継続が作る、<br className="md:hidden" />理にかなったボディメイク
+                </h3>
+                <div className="space-y-4 text-gray-700 leading-relaxed">
+                  <p>
+                    小学校から大学までの16年間、野球一筋で白球を追い続けてきました。その現役時代に培った身体作りの基礎をベースに、16歳から本格的にウエイトトレーニングを開始。以来15年以上、欠かすことなくトレーニングを継続しています。
+                  </p>
+                  <p>
+                    現在は「仕事や家庭と両立しながら、いかに効率よく理想の身体を作るか」をテーマに、自宅にスミスマシンや可変式ダンベルを備えたこだわりのホームジムを構築し、日々研究を重ねています。
+                  </p>
+                  <p>
+                    長年のスポーツ経験と、15年の筋トレキャリアで得た「身体を変えるための本質」を、自身のYouTubeチャンネル等でも発信しています。
+                  </p>
+                </div>
+                <div className="mt-6">
+                  <a
+                    href="https://www.youtube.com/@thebase-gym/videos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-bold text-sm hover:bg-red-700 transition"
+                  >
+                    ▶ YouTubeチャンネルを見る
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

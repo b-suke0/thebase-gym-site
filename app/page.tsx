@@ -254,7 +254,7 @@ export default function Home() {
             60分パーソナルトレーニング体験。<br />
             トレーナーと一緒に、あなたに合ったメニューを見つけましょう。
           </p>
-          <p className="text-4xl font-bold text-yellow-400 mb-8">1,000<span className="text-xl">円</span></p>
+          <p className="text-4xl font-bold text-yellow-400 mb-8">1,500<span className="text-xl">円</span></p>
           <Link
             href="/contact/"
             className="bg-yellow-400 text-navy px-10 py-4 rounded font-bold text-lg hover:bg-yellow-300 transition"

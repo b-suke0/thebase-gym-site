@@ -24,6 +24,7 @@ export default function PricePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Light */}
             <div className="bg-white rounded-xl p-8 shadow-sm">
+              <span className="inline-block bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">🎉 入会金無料（期間限定）</span>
               <h2 className="text-xl font-bold text-navy mb-2">ライトプラン</h2>
               <p className="text-4xl font-bold text-navy mb-1">500<span className="text-base font-normal">円</span></p>
               <p className="text-gray-500 text-sm mb-6">/60分</p>
@@ -41,6 +42,7 @@ export default function PricePage() {
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-navy text-xs font-bold px-4 py-1 rounded-full">
                 人気No.1
               </div>
+              <span className="inline-block bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">🎉 入会金無料（期間限定）</span>
               <h2 className="text-xl font-bold text-navy mb-2">ベーシックプラン</h2>
               <p className="text-4xl font-bold text-navy mb-1">3,000<span className="text-base font-normal">円</span></p>
               <p className="text-gray-500 text-sm mb-1">/60分</p>
@@ -55,6 +57,7 @@ export default function PricePage() {
 
             {/* Success */}
             <div className="bg-white rounded-xl p-8 shadow-sm">
+              <span className="inline-block bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">🎉 入会金無料（期間限定）</span>
               <h2 className="text-xl font-bold text-navy mb-2">サクセスプラン</h2>
               <p className="text-4xl font-bold text-navy mb-1">30,000<span className="text-base font-normal">円</span></p>
               <p className="text-gray-500 text-sm mb-1">/1ヵ月</p>

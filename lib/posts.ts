@@ -12,6 +12,7 @@ export interface PostData {
   date: string
   category: string
   description: string
+  draft?: boolean
   contentHtml?: string
 }
 
@@ -30,14 +31,24 @@ export function getSortedPostsData(): PostData[] {
         date: matterResult.data.date as string,
         category: matterResult.data.category as string,
         description: matterResult.data.description as string,
+        draft: matterResult.data.draft as boolean ?? false,
       }
     })
+    .filter((post) => !post.draft)
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1))
 }
 
 export function getAllPostSlugs(): string[] {
   const fileNames = fs.readdirSync(postsDirectory)
-  return fileNames.filter((f) => f.endsWith('.md')).map((fileName) => fileName.replace(/\.md$/, ''))
+  return fileNames
+    .filter((f) => f.endsWith('.md'))
+    .filter((fileName) => {
+      const fullPath = path.join(postsDirectory, fileName)
+      const fileContents = fs.readFileSync(fullPath, 'utf8')
+      const matterResult = matter(fileContents)
+      return !matterResult.data.draft
+    })
+    .map((fileName) => fileName.replace(/\.md$/, ''))
 }
 
 export async function getPostData(slug: string): Promise<PostData> {

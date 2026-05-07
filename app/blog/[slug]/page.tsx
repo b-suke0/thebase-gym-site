@@ -16,6 +16,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      url: `https://thebase-gym.com/blog/${params.slug}/`,
+      siteName: 'THE BASE GYM',
+      images: [
+        {
+          url: 'https://thebase-gym.com/gym-main.webp',
+          width: 1200,
+          height: 630,
+          alt: 'THE BASE GYM｜福井県鯖江市の完全貸切パーソナルジム',
+        },
+      ],
+      locale: 'ja_JP',
+      type: 'article',
+    },
   }
 }
 
@@ -82,7 +98,7 @@ export default async function BlogPostPage({ params }: Props) {
               href="/blog/"
               className="border border-navy text-navy px-8 py-3 rounded font-bold hover:bg-navy hover:text-white transition text-sm"
             >
-              ブログ一覧に戻る
+              コラム一覧に戻る
             </Link>
           </div>
         </div>
@@ -91,7 +107,7 @@ export default async function BlogPostPage({ params }: Props) {
       {/* CTA */}
       <section className="bg-navy text-white py-14 px-4 text-center">
         <h2 className="text-2xl font-bold mb-4">まずは初回体験から</h2>
-        <p className="text-gray-300 mb-8">60分パーソナルトレーニング体験 1,000円</p>
+        <p className="text-gray-300 mb-8">60分パーソナルトレーニング体験 1,500円</p>
         <Link
           href="/contact/"
           className="bg-yellow-400 text-navy px-10 py-4 rounded font-bold text-lg hover:bg-yellow-300 transition"

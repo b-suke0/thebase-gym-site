@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: '料金プラン',
-  description: 'THE BASE GYMの料金プラン一覧。ライト500円/60分〜、ベーシック3,000円/60分（初回体験1,000円）、サクセスプラン30,000円/月。完全予約制・完全貸切。',
+  description: 'THE BASE GYMの料金プラン一覧。ライト1,000円/60分〜、ベーシック3,000円/60分（初回体験1,500円）、サクセスプラン30,000円/月。完全予約制・完全貸切。',
 }
 
 export default function PricePage() {
@@ -28,7 +28,7 @@ export default function PricePage() {
             {/* Light */}
             <div className="bg-white rounded-xl p-8 shadow-sm">
               <h2 className="text-xl font-bold text-navy mb-2">ライトプラン</h2>
-              <p className="text-4xl font-bold text-navy mb-1">500<span className="text-base font-normal">円</span></p>
+              <p className="text-4xl font-bold text-navy mb-1">1,000<span className="text-base font-normal">円</span></p>
               <p className="text-gray-500 text-sm mb-6">/60分</p>
               <ul className="space-y-3 text-sm text-gray-600 border-t pt-6">
                 <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>完全予約・貸切</li>
@@ -47,7 +47,7 @@ export default function PricePage() {
               <h2 className="text-xl font-bold text-navy mb-2">ベーシックプラン</h2>
               <p className="text-4xl font-bold text-navy mb-1">3,000<span className="text-base font-normal">円</span></p>
               <p className="text-gray-500 text-sm mb-1">/60分</p>
-              <p className="text-yellow-600 text-sm font-bold mb-6">初回体験 1,000円</p>
+              <p className="text-yellow-600 text-sm font-bold mb-6">初回体験 1,500円</p>
               <ul className="space-y-3 text-sm text-gray-600 border-t pt-6">
                 <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>完全予約・貸切</li>
                 <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>パーソナルトレーナー指導</li>
@@ -107,7 +107,7 @@ export default function PricePage() {
 
       {/* CTA */}
       <section className="bg-navy text-white py-14 px-4 text-center">
-        <h2 className="text-2xl font-bold mb-4">まずは初回体験 1,000円から</h2>
+        <h2 className="text-2xl font-bold mb-4">まずは初回体験 1,500円から</h2>
         <p className="text-gray-300 mb-8">60分のパーソナルトレーニング体験。お気軽にどうぞ。</p>
         <Link
           href="/contact/"

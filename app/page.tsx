@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { getSortedPostsData } from '@/lib/posts'
 import HeroSection from '@/components/HeroSection'
 
@@ -102,7 +102,7 @@ export default function Home() {
             {[
               {
                 name: 'ライトプラン',
-                price: '500円',
+                price: '1,000円',
                 unit: '/60分',
                 features: ['完全予約・貸切', 'セルフ利用'],
                 recommended: false,
@@ -111,7 +111,7 @@ export default function Home() {
                 name: 'ベーシックプラン',
                 price: '3,000円',
                 unit: '/60分',
-                sub: '初回体験 1,000円',
+                sub: '初回体験 1,500円',
                 features: ['完全予約・貸切', 'フォーム指導'],
                 recommended: true,
               },

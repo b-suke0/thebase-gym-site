@@ -1,4 +1,4 @@
-export default function ContactPage() {
+﻿export default function ContactPage() {
   return (
     <>
       {/* Hero */}
@@ -37,7 +37,7 @@ export default function ContactPage() {
             <h3 className="text-base font-bold text-navy mb-4">LINEでできること</h3>
             <ul className="space-y-3 text-sm text-gray-700">
               {[
-                '初回体験（1,000円）のご予約',
+                '初回体験（1,500円）のご予約',
                 'プランについてのご質問',
                 'トレーニング・食事に関する相談',
                 '最新情報・キャンペーンの受け取り',

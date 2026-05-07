@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
@@ -47,7 +47,7 @@ export default function HeroSection() {
             href="/contact/"
             className="bg-yellow-400 text-navy px-10 py-4 rounded font-bold text-xl hover:bg-yellow-300 transition"
           >
-            初回体験 1,000円 →
+            初回体験 1,500円 →
           </Link>
           <Link
             href="/price/"

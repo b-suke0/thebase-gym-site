@@ -94,7 +94,10 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <p className="text-center text-yellow-400 text-sm font-bold tracking-widest mb-2">COURSE MENU</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">コース紹介</h2>
-          <p className="text-center text-gray-400 mb-10">〜完全予約制〜</p>
+          <p className="text-center text-gray-400 mb-6">〜完全予約制〜</p>
+          <div className="bg-red-500 text-white text-center font-bold py-4 px-4 rounded-xl mb-8 text-base md:text-lg tracking-wide shadow-md">
+            🎉 入会金・年会費・解約金すべて無料！
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {

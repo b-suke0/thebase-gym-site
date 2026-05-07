@@ -17,7 +17,7 @@ export default function Header() {
           <Link href="/#about" className="hover:text-yellow-300 transition">ジムについて</Link>
           <Link href="/price/" className="hover:text-yellow-300 transition">料金</Link>
           <Link href="/faq/" className="hover:text-yellow-300 transition">よくある質問</Link>
-          <Link href="/blog/" className="hover:text-yellow-300 transition">ブログ</Link>
+          <Link href="/blog/" className="hover:text-yellow-300 transition">コラム</Link>
           <Link
             href="/contact/"
             className="bg-yellow-400 text-navy px-4 py-2 rounded font-bold hover:bg-yellow-300 transition"
@@ -44,7 +44,7 @@ export default function Header() {
           <Link href="/#about" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>ジムについて</Link>
           <Link href="/price/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>料金</Link>
           <Link href="/faq/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>よくある質問</Link>
-          <Link href="/blog/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>ブログ</Link>
+          <Link href="/blog/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>コラム</Link>
           <Link
             href="/contact/"
             className="bg-yellow-400 text-navy px-4 py-2 rounded font-bold text-center hover:bg-yellow-300 transition"

@@ -55,6 +55,7 @@ export default function Home() {
                   alt="トレーナー"
                   className="w-52 h-64 md:w-64 md:h-80 object-cover object-[center_15%] rounded-2xl shadow-md"
                 />
+                <p className="text-center text-navy font-bold mt-3">びーすけ</p>
               </div>
               <div className="flex-1">
                 <h3 className="text-xl md:text-2xl font-bold text-navy mb-6 leading-snug">

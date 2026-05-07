@@ -23,10 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: 'THE BASE GYM',
       images: [
         {
-          url: 'https://thebase-gym.com/gym-main.webp',
-          width: 1200,
-          height: 630,
-          alt: 'THE BASE GYM｜福井県鯖江市の完全貸切パーソナルジム',
+          url: 'https://thebase-gym.com/og-trainer.png',
+          width: 951,
+          height: 1267,
+          alt: 'THE BASE GYM トレーナー びーすけ｜福井県鯖江市の完全貸切パーソナルジム',
         },
       ],
       locale: 'ja_JP',

@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     siteName: 'THE BASE GYM',
     locale: 'ja_JP',
     type: 'website',
+    images: [
+      {
+        url: 'https://thebase-gym.com/og-trainer.png',
+        width: 951,
+        height: 1267,
+        alt: 'THE BASE GYM トレーナー びーすけ｜福井県鯖江市の完全貸切パーソナルジム',
+      },
+    ],
   },
 }
 

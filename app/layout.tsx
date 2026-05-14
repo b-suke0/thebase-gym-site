@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   },
   description: '鯖江市の完全貸切ジム「THE BASE GYM」。1,000円/60分〜のセルフ利用から、初回体験1,500円のパーソナルトレーニングまで。入会金・月額不要で通えます。',
   keywords: ['鯖江市', '鯖江', 'ジム', 'パーソナルトレーニング', 'パーソナルジム', '完全貸切', '個室', 'THE BASE GYM'],
+  icons: {
+    icon: '/logo.webp',
+    apple: '/logo.webp',
+  },
   openGraph: {
     siteName: 'THE BASE GYM',
     locale: 'ja_JP',

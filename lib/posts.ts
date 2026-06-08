@@ -13,6 +13,20 @@ const postsDirectory = path.join(process.cwd(), 'content/posts')
 // Internal hosts that should NOT open in a new tab
 const INTERNAL_HOSTS = ['thebase-gym.com', 'www.thebase-gym.com']
 
+// Affiliate hosts → auto-add rel="sponsored"
+const AFFILIATE_HOSTS = [
+  'a.r10.to',        // 楽天アフィリエイト
+  'hb.afl.rakuten.co.jp',
+  'amzn.to',         // Amazon短縮
+  'amzn.asia',
+  'www.amazon.co.jp',
+  'amazon.co.jp',
+  'px.a8.net',       // A8.net
+  'h.accesstrade.net',
+  'af.moshimo.com',  // もしもアフィリエイト
+  'ck.jp.ap.valuecommerce.com', // バリューコマース
+]
+
 export interface PostData {
   slug: string
   title: string
@@ -70,7 +84,21 @@ export async function getPostData(slug: string): Promise<PostData> {
     .use(rehypeExternalLinks, {
       // Open external links in new tab + security/SEO-friendly rel
       target: '_blank',
-      rel: ['noopener', 'noreferrer'],
+      // rel: auto-add "sponsored" for affiliate hosts, else just noopener/noreferrer
+      rel: (element) => {
+        const href = element.properties?.href
+        const base = ['noopener', 'noreferrer']
+        if (typeof href !== 'string') return base
+        try {
+          const url = new URL(href)
+          if (AFFILIATE_HOSTS.includes(url.hostname)) {
+            return [...base, 'sponsored']
+          }
+        } catch {
+          // ignore invalid URL
+        }
+        return base
+      },
       // Treat these hosts as internal (= open in same tab)
       test: (element) => {
         const href = element.properties?.href

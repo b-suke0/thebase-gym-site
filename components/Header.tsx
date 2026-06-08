@@ -19,12 +19,14 @@ export default function Header() {
           <Link href="/price/" className="hover:text-yellow-300 transition">料金</Link>
           <Link href="/faq/" className="hover:text-yellow-300 transition">よくある質問</Link>
           <Link href="/blog/" className="hover:text-yellow-300 transition">コラム</Link>
-          <Link
-            href="/contact/"
-            className="bg-yellow-400 text-navy px-4 py-2 rounded font-bold hover:bg-yellow-300 transition"
+          <a
+            href="https://lin.ee/xVgylZJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#06C755] text-white px-4 py-2 rounded font-bold hover:bg-[#05b34c] transition"
           >
-            お問い合わせ
-          </Link>
+            LINEで予約
+          </a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -46,13 +48,15 @@ export default function Header() {
           <Link href="/price/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>料金</Link>
           <Link href="/faq/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>よくある質問</Link>
           <Link href="/blog/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>コラム</Link>
-          <Link
-            href="/contact/"
-            className="bg-yellow-400 text-navy px-4 py-2 rounded font-bold text-center hover:bg-yellow-300 transition"
+          <a
+            href="https://lin.ee/xVgylZJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#06C755] text-white px-4 py-2 rounded font-bold text-center hover:bg-[#05b34c] transition"
             onClick={() => setIsOpen(false)}
           >
-            お問い合わせ
-          </Link>
+            LINEで予約
+          </a>
         </nav>
       )}
     </header>

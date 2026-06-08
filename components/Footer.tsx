@@ -54,7 +54,6 @@ export default function Footer() {
               <Link href="/price/" className="hover:text-yellow-300 transition">料金</Link>
               <Link href="/faq/" className="hover:text-yellow-300 transition">よくある質問</Link>
               <Link href="/blog/" className="hover:text-yellow-300 transition">ブログ</Link>
-              <Link href="/contact/" className="hover:text-yellow-300 transition">お問い合わせ</Link>
               <Link href="/privacy/" className="hover:text-yellow-300 transition">プライバシーポリシー</Link>
             </nav>
           </div>

@@ -80,7 +80,6 @@ export default function PrivacyPage() {
               <address className="not-italic mt-3 space-y-1">
                 <p className="font-bold text-navy">THE BASE GYM</p>
                 <p>〒916-0005 福井県鯖江市杉本町17-8-8</p>
-                <p>TEL：<a href="tel:090-9234-6711" className="text-navy hover:underline">090-9234-6711</a></p>
                 <p>MAIL：<a href="mailto:the-base-gym@ymail.ne.jp" className="text-navy hover:underline">the-base-gym@ymail.ne.jp</a></p>
               </address>
             </section>

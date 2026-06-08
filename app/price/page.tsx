@@ -109,12 +109,14 @@ export default function PricePage() {
       <section className="bg-navy text-white py-14 px-4 text-center">
         <h2 className="text-2xl font-bold mb-4">まずは初回体験 1,500円から</h2>
         <p className="text-gray-300 mb-8">60分のパーソナルトレーニング体験。お気軽にどうぞ。</p>
-        <Link
-          href="/contact/"
-          className="bg-yellow-400 text-navy px-10 py-4 rounded font-bold text-lg hover:bg-yellow-300 transition"
+        <a
+          href="https://lin.ee/xVgylZJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#06C755] text-white px-10 py-4 rounded font-bold text-lg hover:bg-[#05b34c] transition"
         >
-          予約・お問い合わせ →
-        </Link>
+          公式LINEで予約する →
+        </a>
       </section>
     </>
   )

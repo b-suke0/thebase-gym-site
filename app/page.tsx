@@ -184,12 +184,14 @@ export default function Home() {
                 </div>
               </address>
               <div className="mt-6 flex gap-3">
-                <Link
-                  href="/contact/"
-                  className="bg-navy text-white px-6 py-3 rounded font-bold hover:bg-navy-light transition text-sm"
+                <a
+                  href="https://lin.ee/xVgylZJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#06C755] text-white px-6 py-3 rounded font-bold hover:bg-[#05b34c] transition text-sm"
                 >
-                  予約・お問い合わせ
-                </Link>
+                  公式LINEで予約
+                </a>
                 <a
                   href="https://www.google.com/maps?q=福井県鯖江市杉本町"
                   target="_blank"
@@ -255,12 +257,14 @@ export default function Home() {
             トレーナーと一緒に、あなたに合ったメニューを見つけましょう。
           </p>
           <p className="text-4xl font-bold text-yellow-400 mb-8">1,500<span className="text-xl">円</span></p>
-          <Link
-            href="/contact/"
-            className="bg-yellow-400 text-navy px-10 py-4 rounded font-bold text-lg hover:bg-yellow-300 transition"
+          <a
+            href="https://lin.ee/xVgylZJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#06C755] text-white px-10 py-4 rounded font-bold text-lg hover:bg-[#05b34c] transition"
           >
-            予約・お問い合わせ →
-          </Link>
+            公式LINEで予約する →
+          </a>
         </div>
       </section>
     </>

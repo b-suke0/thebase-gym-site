@@ -43,12 +43,14 @@ export default function HeroSection() {
           あなただけのペースで始めよう。
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/contact/"
+          <a
+            href="https://lin.ee/xVgylZJ"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-yellow-400 text-navy px-10 py-4 rounded font-bold text-xl hover:bg-yellow-300 transition"
           >
             初回体験 1,500円 →
-          </Link>
+          </a>
           <Link
             href="/price/"
             className="border border-white text-white px-10 py-4 rounded font-bold text-xl hover:bg-white hover:text-navy transition"

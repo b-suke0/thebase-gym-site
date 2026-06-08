@@ -12,11 +12,11 @@ const faqs = [
     items: [
       {
         q: '予約はどうすればいいですか？',
-        a: 'お問い合わせフォーム、またはLINE・お電話にてご希望の日時をお知らせください。空き状況を確認のうえ、折り返しご連絡いたします。',
+        a: '公式LINEからご希望の日時をお知らせください。',
       },
       {
         q: '当日予約はできますか？',
-        a: '空きがあれば当日予約も承ります。お電話（090-9234-6711）かお問い合わせフォームよりお早めにご連絡ください。',
+        a: '空きがあれば当日予約も承ります。公式LINEよりお早めにご連絡ください。',
       },
       {
         q: 'キャンセルはできますか？',
@@ -144,19 +144,15 @@ export default function FaqPage() {
       {/* CTA */}
       <section className="bg-navy text-white py-14 px-4 text-center">
         <h2 className="text-2xl font-bold mb-4">その他のご質問はお気軽に</h2>
-        <p className="text-gray-300 mb-8">お問い合わせフォームまたはお電話にてお気軽にどうぞ。</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/contact/"
-            className="bg-yellow-400 text-navy px-10 py-4 rounded font-bold text-lg hover:bg-yellow-300 transition"
-          >
-            お問い合わせフォーム →
-          </Link>
+        <p className="text-gray-300 mb-8">公式LINEからお気軽にどうぞ。</p>
+        <div className="flex justify-center">
           <a
-            href="tel:090-9234-6711"
-            className="border border-white text-white px-10 py-4 rounded font-bold text-lg hover:bg-white hover:text-navy transition"
+            href="https://lin.ee/xVgylZJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#06C755] text-white px-10 py-4 rounded font-bold text-lg hover:bg-[#05b34c] transition"
           >
-            090-9234-6711
+            公式LINEで相談する →
           </a>
         </div>
       </section>

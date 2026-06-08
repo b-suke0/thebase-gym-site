@@ -392,7 +392,7 @@ A. ちゃんとしたメーカーの機材なら10年以上もちます。スミ
 - ベンチプレス・スクワット・デッドリフト全部できる
 - 国内メーカーで安心、サポート対応も丁寧
 
-👉 [TO-PFSC IROTECPRO を見る（楽天）](https://a.r10.to/h54Mtl)
+👉 <a href="https://a.r10.to/h54Mtl" target="_blank" rel="noopener noreferrer sponsored">TO-PFSC IROTECPRO を見る（楽天）</a>
 
 ### 🔩 バーベル・プレート
 
@@ -403,7 +403,7 @@ A. ちゃんとしたメーカーの機材なら10年以上もちます。スミ
 - ラバーコーティングで床を傷めない
 - 入門〜中級者まで対応する重量バリエーション
 
-👉 [バーベル・プレートを見る（楽天）](https://a.r10.to/hYPgJV)
+👉 <a href="https://a.r10.to/hYPgJV" target="_blank" rel="noopener noreferrer sponsored">バーベル・プレートを見る（楽天）</a>
 
 ### 💪 可変式ダンベル
 
@@ -414,7 +414,7 @@ A. ちゃんとしたメーカーの機材なら10年以上もちます。スミ
 - 省スペース（マンションでも置ける）
 - 初心者から上級者まで一生使える
 
-👉 [可変式ダンベルを見る（楽天）](https://a.r10.to/hkoKVu)
+👉 <a href="https://a.r10.to/hkoKVu" target="_blank" rel="noopener noreferrer sponsored">可変式ダンベルを見る（楽天）</a>
 
 <div style="background:#F0F7F4;border-left:5px solid #6FB593;padding:14px 20px;margin:16px 0;border-radius:6px;">
 <strong>💡 私の購入順番</strong><br>

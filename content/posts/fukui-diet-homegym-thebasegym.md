@@ -168,3 +168,12 @@ A. 現金とPayPayに対応しています。
 「安いから品質が低い」ではなく、「余計なコストを削ったから安い」のがTHE BASE GYMの考え方です。まずはLINEから気軽にご連絡ください。
 
 👉 [LINEで友だち追加・予約する](https://lin.ee/xVgylZJ)
+
+---
+
+## 関連記事もチェック
+
+- [ジムが続かない人へ｜15年続けてる僕が見つけた「続く人」との差](/blog/fukui-gym-tsuzukanai/)
+- [福井のジム初心者ガイド｜恥ずかしい・続かないを解決](/blog/fukui-gym-beginner/)
+- [自宅で安く続けたい人へ｜ホームジムは本当に元が取れる？](/blog/fukui-home-gym-build/)
+- [アイロテックのスミスマシンを4年使った正直レビュー](/blog/fukui-smith-machine-gym/)

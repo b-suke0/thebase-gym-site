@@ -168,3 +168,12 @@ THE BASE GYMなら、初回体験1,500円でこれらすべてを確かめられ
 「ダサくてもいい。まず1回やってみよう。」
 
 👉 [LINEで初回体験を予約する](https://lin.ee/xVgylZJ)
+
+---
+
+## 関連記事もチェック
+
+- [ジムが続かない人へ｜15年続けてる僕が見つけた「続く人」との差](/blog/fukui-gym-tsuzukanai/)
+- [福井で月額なし・都度払いで通えるジムまとめ](/blog/fukui-gym-no-monthly/)
+- [自宅で続けたい人へ｜ホームジムは本当に元が取れる？](/blog/fukui-home-gym-build/)
+- [アイロテックのスミスマシンを4年使った正直レビュー](/blog/fukui-smith-machine-gym/)

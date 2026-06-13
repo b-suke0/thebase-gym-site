@@ -1,5 +1,5 @@
 ﻿---
-title: "格安レンタルトレーニングルームOPEN！！"
+title: "完全貸切のレンタルトレーニングルーム、鯖江にOPEN！！"
 date: "2025-04-21"
 category: "NEWS"
 slug: "hello-world"

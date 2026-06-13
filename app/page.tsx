@@ -101,25 +101,29 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                name: 'ライトプラン',
-                price: '1,000円',
+                name: 'セルフ利用',
+                regular: '2,000円',
+                price: '1,500円',
                 unit: '/60分',
+                sub: 'オープン記念価格（期間限定）',
                 features: ['完全予約・貸切', 'セルフ利用'],
                 recommended: false,
               },
               {
-                name: 'ベーシックプラン',
-                price: '3,000円',
+                name: 'パーソナル',
+                regular: '',
+                price: '5,500円',
                 unit: '/60分',
-                sub: '初回体験 1,500円',
-                features: ['完全予約・貸切', 'フォーム指導'],
+                sub: '4回券 20,000円（1回あたり5,000円）',
+                features: ['マンツーマン指導', 'フォーム指導'],
                 recommended: true,
               },
               {
                 name: 'サクセスプラン',
+                regular: '',
                 price: '30,000円',
                 unit: '/1ヵ月',
-                sub: '50,000円/2ヵ月',
+                sub: '週1パーソナル＋LINE食事サポート',
                 features: ['週1回パーソナル', 'LINE食事アドバイス'],
                 recommended: false,
               },
@@ -132,6 +136,9 @@ export default function Home() {
                   <p className="text-yellow-500 text-xs font-bold mb-2">◆ 人気No.1</p>
                 )}
                 <h3 className={`font-bold text-xl mb-3 ${plan.recommended ? 'text-navy' : ''}`}>{plan.name}</h3>
+                {plan.regular && (
+                  <p className={`text-sm line-through ${plan.recommended ? 'text-gray-400' : 'text-gray-500'}`}>{plan.regular}</p>
+                )}
                 <p className={`text-3xl font-bold mb-1 ${plan.recommended ? 'text-navy' : 'text-yellow-300'}`}>
                   {plan.price}<span className="text-sm font-normal">{plan.unit}</span>
                 </p>
@@ -256,7 +263,9 @@ export default function Home() {
             60分パーソナルトレーニング体験。<br />
             トレーナーと一緒に、あなたに合ったメニューを見つけましょう。
           </p>
-          <p className="text-4xl font-bold text-yellow-400 mb-8">1,500<span className="text-xl">円</span></p>
+          <p className="mb-2 text-gray-400 line-through text-lg">3,000円</p>
+          <p className="text-4xl font-bold text-yellow-400 mb-2">1,500<span className="text-xl">円</span></p>
+          <p className="text-yellow-400 text-sm font-bold mb-8">オープン記念価格（期間限定・予告なく終了する場合があります）</p>
           <a
             href="https://lin.ee/xVgylZJ"
             target="_blank"

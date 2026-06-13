@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: Props) {
       {/* CTA */}
       <section className="bg-navy text-white py-14 px-4 text-center">
         <h2 className="text-2xl font-bold mb-4">まずは初回体験から</h2>
-        <p className="text-gray-300 mb-8">60分パーソナルトレーニング体験 1,500円</p>
+        <p className="text-gray-300 mb-8">60分パーソナル体験 3,000円 → オープン記念価格1,500円</p>
         <a
           href="https://lin.ee/xVgylZJ"
           target="_blank"

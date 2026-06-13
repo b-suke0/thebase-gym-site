@@ -49,7 +49,7 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             className="bg-yellow-400 text-navy px-10 py-4 rounded font-bold text-xl hover:bg-yellow-300 transition"
           >
-            初回体験 1,500円 →
+            初回体験 記念価格1,500円 →
           </a>
           <Link
             href="/price/"

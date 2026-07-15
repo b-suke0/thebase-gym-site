@@ -22,6 +22,12 @@ description: "ダイエットを頑張ったのに体重が増えた——その
 → 連載の全体像・最新の体重は <a href="/blog/real-genryo-log/">こちらのまとめ記事</a> から
 </div>
 
+この「飲んだ翌朝に+0.7kg跳ねて、翌日戻った」実演は、毎朝の体重とあわせて動画でも公開しています（リアル減量ログ 第2回）。
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:24px 0;border-radius:8px;">
+<iframe src="https://www.youtube.com/embed/q2x0CEHTvLg" title="【減量2週目】お酒を飲みながら−1.5kg落ちました" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ---
 
 ## 実例：管理したのに、初週で体重が増えた（70.6 → 71.20kg）

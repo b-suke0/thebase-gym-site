@@ -22,6 +22,12 @@ description: "食べ過ぎた翌日はどうリセットすればいい？減量
 → 連載の全体像・最新の体重は <a href="/blog/real-genryo-log/">こちらのまとめ記事</a> から
 </div>
 
+この「海で3,040kcal食べた翌日、どう戻したか」は、実際の食事とあわせて動画でも公開しています（リアル減量ログ 第1回）。
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:24px 0;border-radius:8px;">
+<iframe src="https://www.youtube.com/embed/H51caFfV408" title="海で3,040kcal食べた翌日、こう戻した｜リアル減量ログ #1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ---
 
 ## 結論：1日の食べ過ぎで脂肪はほとんど増えない

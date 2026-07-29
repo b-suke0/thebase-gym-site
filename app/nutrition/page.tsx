@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'オンライン栄養管理（食事サポート）｜1ヶ月15,000円・全国どこからでも',
-  description: '全国どこからでも受けられるオンライン栄養管理。1ヶ月15,000円で、毎日の食事にフィードバックし、あなた専用のカロリー・PFC設計を4週間サポート。禁酒も外食禁止もしません。通話・対面なし、テキストのみで完結。終わった後も自分で続けられる状態を目指します。',
+  title: 'オンライン栄養管理｜3ヶ月プログラム 月15,000円・全国どこからでも',
+  description: '全国どこからでも受けられるオンライン栄養管理の3ヶ月プログラム（月15,000円）。あなた専用のカロリー・PFC設計と毎日の食事フィードバックから始め、3ヶ月後には自分で判断できる状態へ。禁酒も外食禁止もしません。通話・対面なし、テキストのみで完結。修了時に専用の食事ルールを1枚お渡しします。',
 }
 
 const flow = [
@@ -19,18 +19,18 @@ const flow = [
   },
   {
     num: '03',
-    title: '毎日の食事フィードバック（4週間）',
+    title: '毎日の食事フィードバック',
     body: '食べたものを写真か文章で送っていただき、その日のうちに改善点をお返しします。写真1枚でOK。凝った記録は求めません。',
   },
   {
     num: '04',
-    title: '週末の振り返りレポート（全4回）',
+    title: '毎週の振り返りレポート（全12回）',
     body: 'その週の体重推移・平均摂取カロリー・良かった点・崩れやすかった場面・翌週の調整方針を、数字と文章でお渡しします。',
   },
   {
     num: '05',
-    title: '卒業後も自分で続けられる状態にする',
-    body: '週が進むごとに「自分で判断できる範囲」を増やします。最終日には、あなた専用の食事ルールを1枚にまとめてお渡しします。',
+    title: '修了後も自分で続けられる状態にする',
+    body: '月が進むごとに「自分で判断できる範囲」を増やします。修了時には、あなた専用の食事ルールを1枚にまとめてお渡しします。',
   },
 ]
 
@@ -39,18 +39,14 @@ export default function NutritionPage() {
     <>
       {/* Hero */}
       <section className="bg-navy text-white">
-        <img
-          src="/nutrition/cover.png"
-          alt="4週間後、自分で回せるように。最終日に、あなた専用の食事ルールを1枚。"
-          className="w-full h-auto"
-        />
-        <div className="max-w-3xl mx-auto text-center py-12 px-4">
+        <div className="max-w-3xl mx-auto text-center py-16 px-4">
           <p className="text-yellow-400 text-sm font-bold tracking-widest mb-3">ONLINE NUTRITION</p>
           <h1 className="text-3xl md:text-4xl font-bold leading-snug">
-            オンライン栄養管理
+            オンライン栄養管理<br className="md:hidden" />
+            <span className="text-2xl md:text-3xl">3ヶ月プログラム</span>
           </h1>
           <p className="mt-5 text-lg text-yellow-300 font-bold">
-            何を食べるか迷わなくなる4週間。
+            3ヶ月後、自分で回せるように。
           </p>
           <p className="mt-2 text-gray-300">
             禁酒も、外食禁止も、しません。
@@ -61,8 +57,11 @@ export default function NutritionPage() {
             <span className="bg-white/10 rounded-full px-4 py-1.5">来店不要</span>
           </div>
           <div className="mt-8 inline-block bg-white/10 rounded-xl px-8 py-5">
-            <p className="text-xs text-gray-300 mb-1">1ヶ月（4週間）</p>
-            <p className="text-4xl font-bold text-yellow-400">15,000<span className="text-lg font-normal">円</span></p>
+            <p className="text-xs text-gray-300 mb-1">3ヶ月プログラム</p>
+            <p className="text-4xl font-bold text-yellow-400">
+              月15,000<span className="text-lg font-normal">円</span>
+              <span className="text-lg font-normal text-white"> × 3ヶ月</span>
+            </p>
           </div>
         </div>
       </section>
@@ -141,27 +140,27 @@ export default function NutritionPage() {
           {/* 差別化 */}
           <div className="mt-8 bg-navy text-white rounded-xl p-8">
             <p className="text-yellow-400 text-sm font-bold mb-3">◆ 一番大事にしていること</p>
-            <h3 className="text-xl font-bold mb-4">献立表を渡して終わり、にしません</h3>
+            <h3 className="text-xl font-bold mb-4">ずっと私に頼る状態を、目指しません</h3>
             <p className="text-gray-300 text-sm leading-relaxed mb-5">
-              4週間ずっと私が指摘し続けても、終わった後にご自身で判断できなければ元に戻ってしまいます。
-              だから週が進むごとに、意図的に私の口出しを減らしていきます。
+              私が指摘し続けている間だけ痩せても、終わった後にご自身で判断できなければ元に戻ってしまいます。
+              だから月が進むごとに、意図的に私の口出しを減らしていきます。
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
               <div className="bg-white/10 rounded-lg px-4 py-3">
-                <p className="text-yellow-300 font-bold mb-1">週1〜2</p>
-                <p className="text-gray-300 text-xs">私が細かくフィードバック</p>
+                <p className="text-yellow-300 font-bold mb-1">1ヶ月目</p>
+                <p className="text-gray-300 text-xs">私が細かく設計・毎日フィードバック</p>
               </div>
               <div className="bg-white/10 rounded-lg px-4 py-3">
-                <p className="text-yellow-300 font-bold mb-1">週3</p>
+                <p className="text-yellow-300 font-bold mb-1">2ヶ月目</p>
                 <p className="text-gray-300 text-xs">ご自身で予測 → 答え合わせ</p>
               </div>
               <div className="bg-white/10 rounded-lg px-4 py-3">
-                <p className="text-yellow-300 font-bold mb-1">週4</p>
+                <p className="text-yellow-300 font-bold mb-1">3ヶ月目</p>
                 <p className="text-gray-300 text-xs">ご自身で判断 → 最終確認のみ</p>
               </div>
             </div>
             <p className="text-gray-300 text-sm mt-5">
-              最終日には、<strong className="text-white">あなた専用の食事ルールを1枚</strong>にまとめてお渡しします。
+              修了時には、<strong className="text-white">あなた専用の食事ルールを1枚</strong>にまとめてお渡しします。
               これ1枚あれば続けられる状態が目標です。
             </p>
           </div>
@@ -213,7 +212,7 @@ export default function NutritionPage() {
             <h3 className="font-bold text-navy text-lg mb-3">飲んだ翌日に体重が増えても、慌てません</h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-5">
               お酒を飲んだ翌朝、体重は0.7kg増えました。でもこれは脂肪ではなく、お酒と塩分で溜め込んだ水分です。
-              実際、2日後には元に戻っています。こういう<strong className="text-navy">数字の読み方</strong>も、4週間の中でお伝えします。
+              実際、2日後には元に戻っています。こういう<strong className="text-navy">数字の読み方</strong>も、3ヶ月の中でお伝えします。
             </p>
             <img
               src="/nutrition/weight-trend.png"
@@ -284,26 +283,27 @@ export default function NutritionPage() {
 
           <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm ring-2 ring-yellow-400 relative">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-navy text-xs font-bold px-4 py-1 rounded-full">
-              オンライン栄養管理
+              3ヶ月プログラム
             </div>
             <div className="text-center">
-              <p className="text-gray-500 text-sm mb-2">1ヶ月（4週間）</p>
+              <p className="text-gray-500 text-sm mb-2">3ヶ月プログラム</p>
               <p className="text-5xl font-bold text-navy mb-1">
-                15,000<span className="text-lg font-normal">円</span>
+                月15,000<span className="text-lg font-normal">円</span>
               </p>
-              <p className="text-gray-400 text-xs">税込・買い切り（自動更新はありません）</p>
+              <p className="text-navy font-bold text-sm mb-2">× 3ヶ月（総額45,000円）</p>
+              <p className="text-gray-400 text-xs">税込・3ヶ月で修了（自動更新はありません）</p>
             </div>
             <ul className="mt-8 space-y-3 text-sm text-gray-700 border-t pt-8">
               <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>事前ヒアリング＋あなた専用のカロリー・PFC設計</li>
-              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>毎日の食事フィードバック（4週間）</li>
-              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>週末の振り返りレポート（全4回）</li>
+              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>毎日の食事フィードバック（3ヶ月間）</li>
+              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>毎週の振り返りレポート（全12回）</li>
               <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>期間中の質問は無制限・返信は24時間以内</li>
-              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>最終日にあなた専用の食事ルールを1枚</li>
+              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>修了時にあなた専用の食事ルールを1枚</li>
             </ul>
             <p className="mt-8 text-xs text-gray-500 leading-relaxed border-t pt-6">
-              ※4週間で終了です。継続の義務はありません（ご希望の場合のみご相談ください）<br />
+              ※3ヶ月で修了するプログラムです。その後の継続義務はありません<br />
               ※サプリ・商品の販売は一切ありません<br />
-              ※お支払い方法は公式LINEでご案内します
+              ※お支払い方法（月ごと／一括）は公式LINEでご案内します
             </p>
           </div>
 
@@ -348,12 +348,16 @@ export default function NutritionPage() {
                 a: '停滞は来る前提で組みます。記録が残っているので、摂取量・水分・便通などの要因を1つずつ切り分けて対処します。',
               },
               {
-                q: '4週間終わったら、また申し込む必要がありますか？',
-                a: 'ありません。1ヶ月15,000円の買い切りで、自動更新もしません。むしろ「一人で続けられる状態」で終わることを目標にしています。継続をご希望の場合のみ、ご相談ください。',
+                q: '3ヶ月終わったら、また申し込む必要がありますか？',
+                a: 'ありません。3ヶ月で修了するプログラムで、自動更新もしません。むしろ「一人で続けられる状態」で修了することを目標にしています。3ヶ月目は私の口出しを意図的に減らし、ご自身で判断できる形に移行します。',
+              },
+              {
+                q: 'なぜ3ヶ月なのですか？',
+                a: '食事の判断が習慣として身につくまでに、それくらいはかかるからです。1ヶ月で数字を作れても、自分で判断できるようになるには「予測して答え合わせをする」期間が必要です。逆に、それ以上に長く私に頼る状態は目指していません。',
               },
               {
                 q: '追加料金はかかりますか？',
-                a: 'かかりません。1ヶ月15,000円に、毎日のフィードバック・週末レポート・無制限の質問・最終日の食事ルールがすべて含まれます。サプリや商品の販売も一切ありません。',
+                a: 'かかりません。月15,000円に、毎日のフィードバック・毎週のレポート・無制限の質問・修了時の食事ルールがすべて含まれます。サプリや商品の販売も一切ありません。',
               },
               {
                 q: '筋トレもやらないといけませんか？',
@@ -378,7 +382,7 @@ export default function NutritionPage() {
         <div className="max-w-xl mx-auto text-center">
           <p className="text-yellow-400 text-sm font-bold tracking-widest mb-3">APPLY</p>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">オンラインで、一緒に減量を設計します</h2>
-          <p className="text-yellow-400 font-bold mb-6">1ヶ月（4週間）15,000円</p>
+          <p className="text-yellow-400 font-bold mb-6">3ヶ月プログラム／月15,000円 × 3ヶ月</p>
           <p className="text-gray-300 mb-8 leading-relaxed text-sm md:text-base">
             まずは公式LINEから「食事サポート希望」とメッセージを送ってください。<br />
             今の生活を伺ったうえで、無理のない進め方をご案内します。<br />

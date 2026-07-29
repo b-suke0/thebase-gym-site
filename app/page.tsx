@@ -96,7 +96,7 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-3">オンライン栄養管理</h2>
           <p className="text-center text-gray-600 mb-10">
             ジムに来られない方も、全国どこからでも。<br className="md:hidden" />
-            <strong className="text-navy">何を食べるか迷わなくなる4週間。</strong>
+            <strong className="text-navy">3ヶ月後、自分で回せるように。</strong>
           </p>
 
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
@@ -106,9 +106,9 @@ export default function Home() {
                 <h3 className="font-bold text-navy text-lg mb-5">サポートの内容</h3>
                 <ul className="space-y-3 text-sm text-gray-700">
                   <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>あなた専用のカロリー・PFC設計</li>
-                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>毎日の食事フィードバック（4週間）</li>
-                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>週末の振り返りレポート（全4回）</li>
-                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>最終日にあなた専用の食事ルールを1枚</li>
+                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>毎日の食事フィードバック（3ヶ月間）</li>
+                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>毎週の振り返りレポート（全12回）</li>
+                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>修了時にあなた専用の食事ルールを1枚</li>
                   <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>質問は期間中無制限・返信は24時間以内</li>
                 </ul>
                 <div className="mt-6 flex flex-wrap gap-2 text-xs">
@@ -127,8 +127,11 @@ export default function Home() {
                   オンラインで、<br />一緒に減量を設計します
                 </h3>
                 <div className="mb-5">
-                  <p className="text-xs text-gray-400 mb-1">1ヶ月（4週間）</p>
-                  <p className="text-3xl font-bold text-yellow-400">15,000<span className="text-base font-normal">円</span></p>
+                  <p className="text-xs text-gray-400 mb-1">3ヶ月プログラム</p>
+                  <p className="text-3xl font-bold text-yellow-400">
+                    月15,000<span className="text-base font-normal">円</span>
+                    <span className="text-base font-normal text-gray-300"> × 3ヶ月</span>
+                  </p>
                 </div>
                 <p className="text-gray-300 text-sm leading-relaxed mb-6">
                   公式LINEから「食事サポート希望」とメッセージを送ってください。ご相談だけでも大丈夫です。

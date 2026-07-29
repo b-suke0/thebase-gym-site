@@ -126,6 +126,10 @@ export default function Home() {
                 <h3 className="font-bold text-xl mb-3 leading-snug">
                   オンラインで、<br />一緒に減量を設計します
                 </h3>
+                <div className="mb-5">
+                  <p className="text-xs text-gray-400 mb-1">1ヶ月（4週間）</p>
+                  <p className="text-3xl font-bold text-yellow-400">15,000<span className="text-base font-normal">円</span></p>
+                </div>
                 <p className="text-gray-300 text-sm leading-relaxed mb-6">
                   公式LINEから「食事サポート希望」とメッセージを送ってください。ご相談だけでも大丈夫です。
                 </p>

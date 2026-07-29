@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'オンライン栄養管理（食事サポート）｜4週間・全国どこからでも',
-  description: '全国どこからでも受けられるオンライン栄養管理。毎日の食事にフィードバックし、あなた専用のカロリー・PFC設計を4週間サポート。禁酒も外食禁止もしません。通話・対面なし、テキストのみで完結。終わった後も自分で続けられる状態を目指します。',
+  title: 'オンライン栄養管理（食事サポート）｜1ヶ月15,000円・全国どこからでも',
+  description: '全国どこからでも受けられるオンライン栄養管理。1ヶ月15,000円で、毎日の食事にフィードバックし、あなた専用のカロリー・PFC設計を4週間サポート。禁酒も外食禁止もしません。通話・対面なし、テキストのみで完結。終わった後も自分で続けられる状態を目指します。',
 }
 
 const flow = [
@@ -38,8 +38,13 @@ export default function NutritionPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy text-white py-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="bg-navy text-white">
+        <img
+          src="/nutrition/cover.png"
+          alt="4週間後、自分で回せるように。最終日に、あなた専用の食事ルールを1枚。"
+          className="w-full h-auto"
+        />
+        <div className="max-w-3xl mx-auto text-center py-12 px-4">
           <p className="text-yellow-400 text-sm font-bold tracking-widest mb-3">ONLINE NUTRITION</p>
           <h1 className="text-3xl md:text-4xl font-bold leading-snug">
             オンライン栄養管理
@@ -55,6 +60,10 @@ export default function NutritionPage() {
             <span className="bg-white/10 rounded-full px-4 py-1.5">テキストのみ・通話なし</span>
             <span className="bg-white/10 rounded-full px-4 py-1.5">来店不要</span>
           </div>
+          <div className="mt-8 inline-block bg-white/10 rounded-xl px-8 py-5">
+            <p className="text-xs text-gray-300 mb-1">1ヶ月（4週間）</p>
+            <p className="text-4xl font-bold text-yellow-400">15,000<span className="text-lg font-normal">円</span></p>
+          </div>
         </div>
       </section>
 
@@ -64,6 +73,11 @@ export default function NutritionPage() {
           <h2 className="text-2xl font-bold text-navy text-center mb-8 leading-snug">
             痩せられない原因は、<br className="md:hidden" />意志の弱さではありません
           </h2>
+          <img
+            src="/nutrition/coach-portrait.png"
+            alt="オンライン栄養管理を担当するびーすけ"
+            className="w-full max-w-md mx-auto h-auto rounded-xl mb-8"
+          />
           <div className="bg-white rounded-xl p-8 shadow-sm space-y-4 text-gray-700 leading-relaxed">
             <p>
               私自身が毎日の食事とPFCバランスを記録し続けて分かったのは、
@@ -154,8 +168,28 @@ export default function NutritionPage() {
         </div>
       </section>
 
-      {/* 私の記録 */}
+      {/* 届くもの（サンプル） */}
       <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">SAMPLE</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-4">実際に届くフィードバック</h2>
+          <p className="text-center text-gray-500 text-sm mb-10">
+            「何が届くのか分からない」が一番不安だと思うので、実物をお見せします。
+          </p>
+          <img
+            src="/nutrition/feedback-sample.png"
+            alt="あなたが送る記録と、私からのフィードバックの例。よかった点・気になった点・明日やることを毎日お返しします。"
+            className="w-full h-auto rounded-xl shadow-sm"
+          />
+          <p className="text-center text-gray-500 text-sm mt-6 leading-relaxed">
+            「ダメ出し」で終わらせません。<strong className="text-navy">よかった点 → 気になった点 → 明日やること</strong>まで、
+            具体的な数字とセットでお返しします。
+          </p>
+        </div>
+      </section>
+
+      {/* 私の記録 */}
+      <section className="py-16 px-4 bg-[#f9f7f4]">
         <div className="max-w-3xl mx-auto">
           <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">MY RECORD</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-4">私自身の実践記録</h2>
@@ -167,33 +201,29 @@ export default function NutritionPage() {
             <p className="text-xs text-gray-500 mb-4">
               対象期間：2026年6月27日〜7月28日（日計が確定している記録22日分）
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-              <div className="bg-white rounded-lg px-5 py-4 text-center">
-                <p className="text-xs text-gray-500 mb-1">平均摂取カロリー</p>
-                <p className="text-2xl font-bold text-navy">1,688<span className="text-sm font-normal">kcal</span></p>
-                <p className="text-xs text-yellow-600 font-bold mt-1">設計値1,700との差 12kcal</p>
-              </div>
-              <div className="bg-white rounded-lg px-5 py-4 text-center">
-                <p className="text-xs text-gray-500 mb-1">体重</p>
-                <p className="text-2xl font-bold text-navy">70.6 → 68.1<span className="text-sm font-normal">kg</span></p>
-                <p className="text-xs text-gray-400 mt-1">※68.1kgは期間中の最低値</p>
-              </div>
-              <div className="bg-white rounded-lg px-5 py-4 text-center">
-                <p className="text-xs text-gray-500 mb-1">記録の粒度</p>
-                <p className="text-2xl font-bold text-navy">1品目<span className="text-sm font-normal">単位</span></p>
-                <p className="text-xs text-gray-400 mt-1">目分量も明記</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg px-5 py-4">
-              <p className="text-navy font-bold text-sm mb-2">この期間、ビールを3L飲んだ日もあります。</p>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                禁酒も外食禁止もしていません。その日だけを見るのではなく、週単位で帳尻を合わせる方法をお伝えします。
-              </p>
-            </div>
+            <img
+              src="/nutrition/results.png"
+              alt="私自身の実践記録。体重70.6kg→68.1kg（68.1kgは期間中の最低値）、平均摂取1,688kcal（設計値1,700との差12kcal）、記録は1品目単位。この間、ビールを3L飲んだ日もあります。"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+
+          {/* 飲酒翌日の体重グラフ */}
+          <div className="mt-8">
+            <h3 className="font-bold text-navy text-lg mb-3">飲んだ翌日に体重が増えても、慌てません</h3>
+            <p className="text-gray-600 text-sm leading-relaxed mb-5">
+              お酒を飲んだ翌朝、体重は0.7kg増えました。でもこれは脂肪ではなく、お酒と塩分で溜め込んだ水分です。
+              実際、2日後には元に戻っています。こういう<strong className="text-navy">数字の読み方</strong>も、4週間の中でお伝えします。
+            </p>
+            <img
+              src="/nutrition/weight-trend.png"
+              alt="2026年7月2日〜7月6日の毎朝の体重推移。7月4日の飲酒後、翌朝に0.7kg増えたが2日後に元へ戻った。"
+              className="w-full h-auto rounded-xl shadow-sm"
+            />
           </div>
 
           {/* 自分の失敗も出す */}
-          <div className="mt-6 bg-white border-l-4 border-yellow-400 rounded-r-xl p-6 shadow-sm">
+          <div className="mt-8 bg-white border-l-4 border-yellow-400 rounded-r-xl p-6 shadow-sm">
             <p className="font-bold text-navy mb-2">うまくいっていない点も書いておきます</p>
             <p className="text-gray-600 text-sm leading-relaxed">
               同じ期間、私のタンパク質は平均106.8g。自分で設定した150gに対して慢性的に不足していました。
@@ -215,7 +245,7 @@ export default function NutritionPage() {
       </section>
 
       {/* 進め方・条件 */}
-      <section className="py-16 px-4 bg-[#f9f7f4]">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">HOW IT WORKS</p>
           <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-10">やり取りの流れ</h2>
@@ -242,6 +272,50 @@ export default function NutritionPage() {
               </ul>
               <p className="text-xs text-gray-400 mt-4">※まれに終日返信できない日があります。その場合は事前にお伝えします。</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 料金 */}
+      <section className="py-16 px-4 bg-[#f9f7f4]">
+        <div className="max-w-2xl mx-auto">
+          <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">PRICE</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-10">料金</h2>
+
+          <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm ring-2 ring-yellow-400 relative">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-navy text-xs font-bold px-4 py-1 rounded-full">
+              オンライン栄養管理
+            </div>
+            <div className="text-center">
+              <p className="text-gray-500 text-sm mb-2">1ヶ月（4週間）</p>
+              <p className="text-5xl font-bold text-navy mb-1">
+                15,000<span className="text-lg font-normal">円</span>
+              </p>
+              <p className="text-gray-400 text-xs">税込・買い切り（自動更新はありません）</p>
+            </div>
+            <ul className="mt-8 space-y-3 text-sm text-gray-700 border-t pt-8">
+              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>事前ヒアリング＋あなた専用のカロリー・PFC設計</li>
+              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>毎日の食事フィードバック（4週間）</li>
+              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>週末の振り返りレポート（全4回）</li>
+              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>期間中の質問は無制限・返信は24時間以内</li>
+              <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>最終日にあなた専用の食事ルールを1枚</li>
+            </ul>
+            <p className="mt-8 text-xs text-gray-500 leading-relaxed border-t pt-6">
+              ※4週間で終了です。継続の義務はありません（ご希望の場合のみご相談ください）<br />
+              ※サプリ・商品の販売は一切ありません<br />
+              ※お支払い方法は公式LINEでご案内します
+            </p>
+          </div>
+
+          <div className="mt-6 bg-white rounded-xl p-6 shadow-sm">
+            <p className="font-bold text-navy text-sm mb-2">ジムに通える方は「サクセスプラン」もあります</p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              鯖江のジムに通える方は、週1回のパーソナルトレーニングとLINE食事サポートがセットのサクセスプラン（30,000円/月）もご用意しています。
+              <strong className="text-navy">こちらのオンライン栄養管理は「食事のみ・全国対応・来店不要」</strong>のサポートです。
+            </p>
+            <Link href="/price/" className="inline-block mt-3 text-navy underline text-sm hover:text-yellow-600 transition">
+              ジムの料金プランを見る →
+            </Link>
           </div>
         </div>
       </section>
@@ -275,7 +349,11 @@ export default function NutritionPage() {
               },
               {
                 q: '4週間終わったら、また申し込む必要がありますか？',
-                a: 'ありません。むしろ「一人で続けられる状態」で終わることを目標にしています。継続をご希望の場合のみ、ご相談ください。',
+                a: 'ありません。1ヶ月15,000円の買い切りで、自動更新もしません。むしろ「一人で続けられる状態」で終わることを目標にしています。継続をご希望の場合のみ、ご相談ください。',
+              },
+              {
+                q: '追加料金はかかりますか？',
+                a: 'かかりません。1ヶ月15,000円に、毎日のフィードバック・週末レポート・無制限の質問・最終日の食事ルールがすべて含まれます。サプリや商品の販売も一切ありません。',
               },
               {
                 q: '筋トレもやらないといけませんか？',
@@ -300,6 +378,7 @@ export default function NutritionPage() {
         <div className="max-w-xl mx-auto text-center">
           <p className="text-yellow-400 text-sm font-bold tracking-widest mb-3">APPLY</p>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">オンラインで、一緒に減量を設計します</h2>
+          <p className="text-yellow-400 font-bold mb-6">1ヶ月（4週間）15,000円</p>
           <p className="text-gray-300 mb-8 leading-relaxed text-sm md:text-base">
             まずは公式LINEから「食事サポート希望」とメッセージを送ってください。<br />
             今の生活を伺ったうえで、無理のない進め方をご案内します。<br />

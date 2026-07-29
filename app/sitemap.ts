@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPages: MetadataRoute.Sitemap = [
     { path: '', priority: 1.0, changeFrequency: 'weekly' as const },
+    { path: 'nutrition', priority: 0.9, changeFrequency: 'monthly' as const },
     { path: 'price', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: 'faq', priority: 0.7, changeFrequency: 'monthly' as const },
     { path: 'blog', priority: 0.8, changeFrequency: 'weekly' as const },

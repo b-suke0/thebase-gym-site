@@ -16,6 +16,7 @@ export default function Header() {
         {/* PC Nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           <Link href="/#about" className="hover:text-yellow-300 transition">ジムについて</Link>
+          <Link href="/nutrition/" className="hover:text-yellow-300 transition">食事サポート</Link>
           <Link href="/price/" className="hover:text-yellow-300 transition">料金</Link>
           <Link href="/faq/" className="hover:text-yellow-300 transition">よくある質問</Link>
           <Link href="/blog/" className="hover:text-yellow-300 transition">コラム</Link>
@@ -45,6 +46,7 @@ export default function Header() {
       {isOpen && (
         <nav className="md:hidden bg-navy-light px-4 pb-4 flex flex-col gap-4 text-sm font-medium">
           <Link href="/#about" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>ジムについて</Link>
+          <Link href="/nutrition/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>食事サポート</Link>
           <Link href="/price/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>料金</Link>
           <Link href="/faq/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>よくある質問</Link>
           <Link href="/blog/" className="hover:text-yellow-300 transition" onClick={() => setIsOpen(false)}>コラム</Link>

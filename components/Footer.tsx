@@ -51,6 +51,7 @@ export default function Footer() {
             <h3 className="text-sm font-bold mb-4 text-yellow-400">リンク</h3>
             <nav className="flex flex-col gap-2 text-sm text-gray-300">
               <Link href="/" className="hover:text-yellow-300 transition">トップ</Link>
+              <Link href="/nutrition/" className="hover:text-yellow-300 transition">オンライン栄養管理</Link>
               <Link href="/price/" className="hover:text-yellow-300 transition">料金</Link>
               <Link href="/faq/" className="hover:text-yellow-300 transition">よくある質問</Link>
               <Link href="/blog/" className="hover:text-yellow-300 transition">ブログ</Link>

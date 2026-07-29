@@ -89,6 +89,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Online Nutrition (全国対応・申し込み) */}
+      <section id="nutrition" className="py-16 px-4 bg-[#f9f7f4]">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-center text-yellow-600 text-sm font-bold tracking-widest mb-2">ONLINE NUTRITION</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-navy mb-3">オンライン栄養管理</h2>
+          <p className="text-center text-gray-600 mb-10">
+            ジムに来られない方も、全国どこからでも。<br className="md:hidden" />
+            <strong className="text-navy">何を食べるか迷わなくなる4週間。</strong>
+          </p>
+
+          <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              {/* 内容 */}
+              <div className="p-8 md:p-10">
+                <h3 className="font-bold text-navy text-lg mb-5">サポートの内容</h3>
+                <ul className="space-y-3 text-sm text-gray-700">
+                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>あなた専用のカロリー・PFC設計</li>
+                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>毎日の食事フィードバック（4週間）</li>
+                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>週末の振り返りレポート（全4回）</li>
+                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>最終日にあなた専用の食事ルールを1枚</li>
+                  <li className="flex items-start gap-2"><span className="text-yellow-500 mt-0.5">✓</span>質問は期間中無制限・返信は24時間以内</li>
+                </ul>
+                <div className="mt-6 flex flex-wrap gap-2 text-xs">
+                  <span className="bg-[#f9f7f4] text-navy rounded-full px-3 py-1 font-medium">禁酒なし</span>
+                  <span className="bg-[#f9f7f4] text-navy rounded-full px-3 py-1 font-medium">外食OK</span>
+                  <span className="bg-[#f9f7f4] text-navy rounded-full px-3 py-1 font-medium">自炊なしOK</span>
+                  <span className="bg-[#f9f7f4] text-navy rounded-full px-3 py-1 font-medium">来店不要</span>
+                  <span className="bg-[#f9f7f4] text-navy rounded-full px-3 py-1 font-medium">通話なし</span>
+                </div>
+              </div>
+
+              {/* 申し込み */}
+              <div className="bg-navy text-white p-8 md:p-10 flex flex-col justify-center">
+                <p className="text-yellow-400 text-xs font-bold tracking-widest mb-3">APPLY</p>
+                <h3 className="font-bold text-xl mb-3 leading-snug">
+                  オンラインで、<br />一緒に減量を設計します
+                </h3>
+                <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                  公式LINEから「食事サポート希望」とメッセージを送ってください。ご相談だけでも大丈夫です。
+                </p>
+                <a
+                  href="https://lin.ee/xVgylZJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#06C755] text-white text-center px-6 py-4 rounded font-bold hover:bg-[#05b34c] transition"
+                >
+                  公式LINEで申し込む →
+                </a>
+                <Link
+                  href="/nutrition/"
+                  className="mt-3 text-center text-yellow-400 underline hover:text-yellow-300 transition text-sm"
+                >
+                  サービスの詳細を見る →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Course Menu */}
       <section className="bg-navy text-white py-16 px-4">
         <div className="max-w-5xl mx-auto">

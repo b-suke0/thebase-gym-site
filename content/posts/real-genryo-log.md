@@ -153,6 +153,7 @@ description: "32歳・本業フルタイムの会社員が、家族と同じ食�
 ・<a href="/blog/diet-record-32-office-worker/">減量のPFC計算のやり方｜目標カロリーの決め方を実データで全公開</a>（公開中）<br>
 ・<a href="/blog/genryo-tanpakushitsu-akita/">減量でタンパク質に飽きたときの解決法｜鶏むね・プロテイン地獄を抜け出す高タンパク食材</a>（公開中）<br>
 ・<a href="/blog/osake-nominagara-yaseru/">お酒を飲みながら痩せる方法｜週3で晩酌しても減量できた食べ方</a>（公開中）<br>
+・<a href="/blog/calorie-atteru-noni-yasenai/">カロリーは合っているのに痩せない理由｜1ヶ月分の記録を分析して分かったこと</a>（公開中）<br>
 ・家族と同じ夕食で減量する方法【2児の父の実践】（近日公開）<br>
 ・停滞期と空腹のマネジメント（近日公開）
 </div>
